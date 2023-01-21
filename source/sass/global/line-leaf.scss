@@ -1,0 +1,44 @@
+.line-leaf {
+  position: relative;
+}
+
+.line-leaf::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.line-leaf--big::before {
+  top: 0;
+  left: calc((100% - 228px) / 2);
+  width: 228px;
+  height: 32px;
+  background-image: url("/img/icons/line-leaf/icon-leaf-big.svg");
+
+  @media (min-width: $tablet-width) {
+    left: calc((100% - 296px) / 2);
+    width: 296px;
+    height: 42px;
+    background-size: 296px 42px;
+  }
+}
+
+.line-leaf--small::before {
+  bottom: 24px;
+  left: calc((100% - 76px) / 2);
+  width: 76px;
+  height: 32px;
+  background-image: url("/img/icons/line-leaf/icon-leaf-small.svg");
+
+  @media (min-width: $tablet-width) {
+    bottom: 42px;
+    left: calc((100% - 96px) / 2);
+    width: 96px;
+    height: 40px;
+    background-size: 96px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 44px;
+  }
+}

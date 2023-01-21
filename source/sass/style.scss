@@ -1,0 +1,35 @@
+/* GLOBAL */
+@import "global/variables";
+@import "global/mixin";
+@import "global/global";
+@import "global/fonts";
+@import "global/title";
+@import "global/text";
+@import "global/text-container";
+@import "global/button";
+@import "global/page";
+@import "global/line-leaf";
+
+/* HEADER */
+@import "blocks/header/header";
+@import "blocks/header/main-nav";
+@import "blocks/header/site-list";
+
+/* INDEX - MAIN-CONTAINER */
+@import "blocks/main-container/main-container";
+@import "blocks/main-container/banner";
+@import "blocks/main-container/products/products";
+@import "blocks/main-container/products/products-parametrs";
+@import "blocks/main-container/news";
+
+
+/* FORM - MAIN-CONTAINER */
+@import "blocks/main-container/order";
+@import "blocks/main-container/form/form";
+@import "blocks/main-container/form/field";
+
+/* FOOTER */
+@import "blocks/footer/footer";
+@import "blocks/footer/contacts";
+@import "blocks/footer/social";
+@import "blocks/footer/copyright";

@@ -1,0 +1,47 @@
+.title {
+  @include margin-zeroing;
+  font-family: "Comfortaa", "Tahoma", sans-serif;
+  font-weight: 400;
+  color: $green;
+}
+
+.title--h1 {
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 52px;
+    line-height: 58px;
+  }
+}
+
+.title--h2 {
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+    line-height: 58px;
+  }
+}
+
+.title--h3 {
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.title--h4 {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}

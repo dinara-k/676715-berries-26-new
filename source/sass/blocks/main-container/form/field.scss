@@ -1,0 +1,48 @@
+.field {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid $green;
+  border-radius: 20px;
+}
+
+.field::placeholder {
+  color: rgba($gray, 0.7);
+}
+
+.field:hover {
+  border-color: $green-hover;
+}
+
+.field:focus-visible {
+  outline: none;
+  border-color: $green-hover;
+  // box-shadow: inset 0 0 0 2px $grey-44;
+}
+
+.field--error {
+  border-color: $red;
+  // box-shadow: inset 0 0 0 2px $error;
+}
+
+.field--error-text {
+  display: none;
+}
+
+.field--error + .field--error-text {
+  display: block;
+  padding-top: 4px;
+  padding-left: 13px;
+  color: $red;
+}
+
+.field:disabled,
+.field:disabled:hover {
+  border-color: rgba($gray, 0.7);
+  background-color: transparent;
+}
+
+.field:disabled:focus-visible {
+  outline: none;
+}
+

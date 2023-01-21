@@ -1,0 +1,154 @@
+.contacts-container {
+  padding-top: 118px;
+  padding-bottom: 64px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 114px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include block-centering-desktop;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 142px;
+  }
+}
+
+.contacts-container .text-container {
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    order: 2;
+  }
+}
+
+.contacts__title {
+  padding-bottom: 64px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
+  }
+}
+
+.contacts__text {
+  padding-bottom: 34px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 26px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+  }
+}
+
+.contacts__list {
+  @include list-zeroing;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 14px;
+  }
+}
+
+.contacts__item {
+  // position: relative;
+  margin-bottom: 12px;
+  // padding-left: 36px;
+  // нужно это свойство?
+}
+
+// .contacts__item::before {
+//   position: absolute;
+//   content: "";
+//   top: calc(50% - 16px);
+//   left: 0;
+//   width: 32px;
+//   height: 32px;
+//   background-repeat: no-repeat;
+// }
+
+// .contacts__item--address::before {
+//   background-image: url("/img/icons/contacts/icon-address.svg");
+// }
+
+// .contacts__item--phone::before {
+//   background-image: url("/img/icons/contacts/icon-phone.svg");
+// }
+
+// .contacts__item--email::before {
+//   background-image: url("/img/icons/contacts/icon-email.svg");
+// }
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $black;
+  background-color: $blue-white;
+  text-decoration: none;
+}
+
+.contacts__link:hover {
+  color: $green-hover;
+}
+
+.contacts__link:focus {
+  opacity: 0.4;
+  outline: none;
+}
+
+.contacts__link:active {
+  color: $green;
+  opacity: 1;
+}
+
+.contacts__icon {
+  padding-right: 4px;
+//   color: rgba($black, 0.2);
+}
+
+// .contacts__link:hover .contacts__icon {
+//   color: $green-63;
+// }
+
+// .contacts__link:focus .contacts__icon {
+//   color: rgba($green-63, 0.7);
+// }
+
+// .contacts__link:active .contacts__icon {
+//   color: rgba($green-63, 0.3);
+// }
+
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  height: 372px;
+  border: none;
+  border-radius: 40px;
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+  }
+}

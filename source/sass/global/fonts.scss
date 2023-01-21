@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  // src: url("../../fonts/comfortaa/Comfortaa-Regular.woff2") format("woff2"),
+  //   url("../../fonts/comfortaa/Comfortaa-Regular.woff") format("woff");
+
+  src: url("../fonts/comfortaa/Comfortaa-Regular.woff2") format("woff2"),
+    url("../fonts/comfortaa/Comfortaa-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  // src: url("../../fonts/raleway/Raleway-Regular.woff2") format("woff2"),
+  //   url("../../fonts/raleway/Raleway-Regular.woff") format("woff");
+
+  src: url("../fonts/raleway/Raleway-Regular.woff2") format("woff2"),
+    url("../fonts/raleway/Raleway-Regular.woff") format("woff");
+}

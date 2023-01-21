@@ -1,0 +1,48 @@
+.order__container {
+  @include block-centering-mobile;
+  padding-bottom: 89px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 624px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 792px;
+  }
+}
+
+.order__wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 532px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 550px;
+  }
+}
+
+.order__title {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+  }
+}
+
+.order__text {
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 46px;
+  }
+}

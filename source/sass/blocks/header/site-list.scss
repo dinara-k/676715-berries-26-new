@@ -1,0 +1,33 @@
+.site-list__link {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  color: $black;
+  background-color: $blue-gray;
+  text-decoration: none;
+}
+
+.site-list__link:hover {
+  color: $green-hover;
+}
+
+.site-list__link:focus {
+  opacity: 0.4;
+  outline: none;
+}
+
+.site-list__link:active {
+  color: $green;
+  opacity: 1;
+}
+
+.site-list__link--active {
+  text-decoration: underline;
+  // text-decoration-color: $green-main;
+  // text-decoration-thickness: 2px;
+  // text-underline-offset: 14px;
+
+  // @media (min-width: $desktop-width) {
+  //   text-decoration-color: $white;
+  // }
+}

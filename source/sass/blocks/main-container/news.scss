@@ -1,0 +1,127 @@
+.news {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.news .text-container {
+  padding-top: 96px;
+
+  @media (min-width: $tablet-width) {
+    width: 716px;
+    padding-top: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1128px;
+    padding-top: 140px;
+  }
+}
+
+.news__title {
+  padding-bottom: 64px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 98px;
+  }
+}
+
+.news__list {
+  @include list-zeroing;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: flex-start;
+  }
+}
+
+.news__item {
+  min-height: 400px;
+  margin-bottom: 24px;
+  padding: 32px 20px 72px 20px;
+  border: 2px solid $green;
+  border-radius: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 348px;
+    min-height: 494px;
+    margin-bottom: 34px;
+    padding: 32px 36px 106px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    min-height: 492px;
+    padding-bottom: 108px;
+  }
+}
+
+.news__item:not(:nth-child(2n)) {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.news__item:not(:nth-child(3n)) {
+  @media (min-width: $desktop-width) {
+    margin-right: 24px;
+  }
+}
+
+.news__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.news__item-title {
+  margin-bottom: 20px;
+  color: $black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    place-items: center;
+    min-height: 100px;
+  }
+}
+
+.news__item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+	min-height: 208px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 232px;
+  }
+}
+
+.news__item-text {
+  padding-bottom: 12px;
+}
+
+.news__item-date {
+  // float: right;
+}

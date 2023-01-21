@@ -1,0 +1,13 @@
+.main-container--inner {
+  font-size: 16px;
+  line-height: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.main-container--inner .contacts-container {
+  padding-top: 93px;
+}

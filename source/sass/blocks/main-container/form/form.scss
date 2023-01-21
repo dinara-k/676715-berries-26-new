@@ -1,0 +1,442 @@
+.form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
+}
+
+.form__container {
+  padding-top: 83px;
+
+  @media (min-width: $tablet-width) {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    width: 484px;
+    padding-top: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 792px;
+    padding-top: 104px;
+  }
+}
+
+.form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  // @media (min-width: $tablet-width) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+}
+
+.form__group-title {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
+  }
+}
+
+.form__list {
+  @include list-zeroing;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+// до изменения на display: flex
+// .form__group--berries .form__group-wrapper {
+//   display: grid;
+//   grid-template-columns: repeat(2, 124px);
+//   column-gap: 20px;
+
+//   @media (min-width: $tablet-width) {
+//     grid-template-columns: repeat(3, 118px);
+//     column-gap: 66px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//   }
+// }
+
+// ------------------ не доделан 1 вариант столбцов: 5 списков / 2 списка
+// .form__group--berries .form__group-wrapper {
+//   height: 336px;
+//   column-count: 2;
+  // column-gap: 20px;
+    // display: grid;
+    // grid-template-columns: repeat(2, 124px);
+    // display: flex;
+    // flex-direction: column;
+    // column-gap: 20px;
+
+//   @media (min-width: $tablet-width) {
+//     // column-count: 3;
+//     // column-gap: 66px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//   }
+// }
+
+
+// .form__list {
+//   @include list-zeroing;
+//   column-count: 2;
+//   // display: flex;
+//   // height: 336px;
+//   // flex-direction: column;
+//   // flex-wrap: wrap;
+//   column-gap: 20px;
+// width: 50%;
+
+//   @media (min-width: $tablet-width) {
+//     height: 192px;
+//     column-gap: 66px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//   }
+// }
+
+// .form__item {
+//   // break-inside: avoid;
+  // margin-bottom: 32px;
+
+//   @media (min-width: $tablet-width) {
+    // margin-bottom: 24px;
+//   }
+// }
+
+// ------------------ 2 вариант столбцов: 1 список с фикс.высотой -> если слишком много элементов, то появляется 3-й столбец
+.form__group--berries .form__list {
+  column-count: 2;
+  column-gap: 20px;
+  height: 336px;
+  // max-width: 267px;
+  max-width: 240px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    height: 192px;
+    column-count: 3;
+    column-gap: 66px;
+    max-width: 483px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 96px;
+    column-count: 5;
+    column-gap: 48px;
+    max-width: 792px;
+    margin-bottom: 33px;
+  }
+}
+
+.form__group--berries .form__item {
+  // break-inside: avoid;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+// ------------------
+
+// ------------------ 3 вариант столбцов: 1 список с разным количеством столбцов -> не должно быть скрытых элементов списка
+// .form__group--berries .form__group-wrapper {
+//   // column-width: 124px;
+//   column-count: 2;
+
+//   @media (min-width: $tablet-width) {
+//     column-count: 3;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     column-count: 5;
+//   }
+// }
+
+// .form__list {
+//   @include list-zeroing;
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   column-gap: 20px;
+//   // вариант 1
+//   // height: 336px;
+//   // column-count: 2;
+
+//   @media (min-width: $tablet-width) {
+//     // height: 192px;
+//     column-gap: 66px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     column-gap: 48px;
+//   }
+// }
+
+// .form__item {
+//   // break-inside: avoid;
+//   margin-bottom: 32px;
+
+//   @media (min-width: $tablet-width) {
+//     margin-bottom: 24px;
+//   }
+// }
+
+// .form__item--empty {
+//   visibility: hidden;
+
+//   @media (min-width: $desktop-width) {
+//     display: none;
+//   }
+// }
+// ------------------
+
+
+// ------------------ недоделан 4 вариант столбцов: 1 список + на уровень выше display:grid
+// .form__group--berries .form__group-wrapper {
+//   // column-width: 124px;
+//   // column-count: 2;
+//   display: grid;
+//   grid-template-columns: repeat(2, 124px);
+//   grid-template-rows: 336px;
+//   column-gap: 20px;
+//   // height: 336px;
+
+//   @media (min-width: $tablet-width) {
+//     column-count: 3;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     column-count: 5;
+//   }
+// }
+
+// .form__list {
+//   @include list-zeroing;
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   // width: 124px;
+//   // column-gap: 20px;
+//   // вариант 1
+//   // height: 336px;
+//   // column-count: 2;
+
+//   @media (min-width: $tablet-width) {
+//     // height: 192px;
+//     column-gap: 66px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     column-gap: 48px;
+//   }
+// }
+
+// .form__item {
+//   // break-inside: avoid;
+//   margin-bottom: 32px;
+
+//   @media (min-width: $tablet-width) {
+//     margin-bottom: 24px;
+//   }
+// }
+
+// .form__item--empty {
+//   visibility: hidden;
+
+//   @media (min-width: $desktop-width) {
+//     display: none;
+//   }
+// }
+// ------------------
+.form__group--storage .form__list {
+  margin-bottom: 8px;
+  // column-count: 2;
+  // column-gap: 20px;
+  // height: 336px;
+  // // max-width: 267px;
+  // max-width: 240px;
+
+
+  @media (min-width: $tablet-width) {
+    height: 96px;
+    column-count: 2;
+    column-gap: 56px;
+    max-width: 443px;
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    // align-items: center;
+    height: 46px;
+    column-count: 3;
+    column-gap: 48px;
+    max-width: 792px;
+  }
+}
+
+.form__group--storage .form__item {
+  // break-inside: avoid;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    // margin-bottom: 24px;
+  }
+}
+
+.form__group--delivery {
+  @media (min-width: $desktop-width) {
+    width: 653px;
+  }
+}
+
+.form__group--delivery .form__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 26px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 50px;
+  }
+}
+
+.form__group--delivery .form__item {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.form__group--contacts .text-container {
+  @media (min-width: $tablet-width) {
+    width: 624px;
+  }
+}
+
+.form__group--contacts .form__group-title {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.form__group-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, min-content);
+  row-gap: 36px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    column-gap: 24px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
+  }
+}
+
+.form__field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field-group--phone {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.form__field-group--email {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
+}
+
+.form__field-group--address {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+}
+
+.form__field-group--comment {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
+  }
+}
+// .form__field-group--name {
+//   width: 50%;
+// }
+
+// .form__group--contacts .form__group-wrapper {
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }
+
+.form__label {
+  padding-bottom: 4px;
+  padding-left: 13px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__label--red {
+  color: $red;
+}
+
+.form__field {
+  padding: 16px 12px;
+}
+
+// .form__group-button {
+//   text-align: center;
+// }
+
+.form__group-button .text-container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    place-items: center;
+    width: 624px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 792px;
+  }
+}

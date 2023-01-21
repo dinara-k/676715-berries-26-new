@@ -1,0 +1,41 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.copyright__link:focus {
+  opacity: 0.4;
+  outline: none;
+}
+
+.copyright__link:active {
+  opacity: 1;
+}
+
+.products__link-title {
+  padding-bottom: 28px;
+}
+
+.copyright__link:hover .copyright__text {
+  color: $green-hover;
+}
+
+.copyright__link:active .copyright__text {
+  color: $green;
+}
+
+.copyright__text {
+  font-size: 11px;
+  line-height: 13px;
+  color: $black;
+  background-color: $blue-gray;
+}
+
+.copyright__icon {
+  display: grid;
+  place-items: center;
+  // fill: $grey-66;
+  margin-left: 8px;
+}

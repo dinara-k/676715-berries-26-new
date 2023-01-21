@@ -1,0 +1,134 @@
+.products {
+  margin-bottom: 64px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.products__title {
+  padding-bottom: 64px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 92px;
+  }
+}
+
+.products .text-container {
+  @media (min-width: $tablet-width) {
+    width: 580px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1128px;
+  }
+}
+
+.products__list {
+  @include list-zeroing;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    // display: grid;
+    grid-template-columns: repeat(2, 264px);
+    gap: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 264px);
+    column-gap: 24px;
+  }
+}
+
+.products__item {
+  display: block;
+  border-radius: 40px;
+  // border: 1px solid $black;
+  box-shadow: 0 4px 4px rgba($purple-shadow, 0.15);
+}
+
+.products__item--hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.products__link-image {
+  text-decoration: none;
+}
+
+.products__link-image:hover {
+  opacity: 0.6;
+}
+
+.products__link-image:focus {
+  opacity: 0.4;
+  outline: none;
+}
+
+.products__link-image:active {
+  opacity: 0.3;
+}
+
+.products__image {
+  display: block;
+  border-radius: 40px 40px 0 0;
+}
+
+.products__content {
+  padding: 28px 20px 54px 24px;
+}
+
+.products__link {
+  text-decoration: none;
+}
+
+.products__link:focus {
+  opacity: 0.4;
+  outline: none;
+}
+
+.products__link:active {
+  opacity: 0.3;
+}
+
+.products__link-title {
+  padding-bottom: 28px;
+}
+
+.products__link:hover .products__link-title {
+  color: $green-hover;
+}
+
+.products__link:active .products__link-title {
+  color: $green;
+}
+
+.products-parametrs {
+  margin: 0;
+  padding-bottom: 38px;
+}
+
+.products__button {
+  box-shadow: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
