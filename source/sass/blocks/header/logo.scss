@@ -2,15 +2,15 @@
   color: $green;
 }
 
-// .logo:hover {
-//   opacity: 0.8;
-// }
+.logo:hover {
+  color: $green-hover;
+}
 
-// .logo:focus {
-//   outline: none;
-//   opacity: 0.7;
-// }
+.logo:focus {
+  outline: none;
+  color: rgba($green, 0.7);
+}
 
-// .logo:active {
-//   opacity: 0.6;
-// }
+.logo:active {
+  color: rgba($green, 0.5);
+}

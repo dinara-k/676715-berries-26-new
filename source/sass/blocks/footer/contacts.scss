@@ -47,7 +47,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 26px;
+    padding-bottom: 23px;
     font-size: 20px;
     line-height: 23px;
     text-align: left;
@@ -56,7 +56,7 @@
 
 .contacts__list {
   @include list-zeroing;
-  padding-bottom: 18px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 28px;

@@ -1,0 +1,139 @@
+/* Control */
+.control {
+  position: relative;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  column-gap: 12px;
+  align-items: center;
+  min-height: 24px;
+
+  // @media (min-width: $tablet-width) {
+  //   grid-template-columns: 50px 1fr;
+  //   column-gap: 27px;
+  //   min-height: 50px;
+  // }
+}
+
+/* Mark */
+.control__mark {
+  position: relative;
+  // top: 2px;
+  // left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $green;
+  color: $green;
+  border-radius: 5px;
+
+  // @media (min-width: $tablet-width) {
+  //   width: 50px;
+  //   height: 50px;
+  // }
+}
+
+.control__icon {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  fill: $green;
+  opacity: 0;
+}
+
+.control__input:hover + .control__mark {
+  color: $green-hover;
+  border-color: $green-hover;
+}
+
+.control__input:focus ~ .control__mark {
+  color: rgba($green, 0.4);
+  border-color: rgba($green, 0.4);
+  outline: none;
+}
+
+.control__input:active + .control__mark {
+  color: $green;
+  border-color: $green;
+}
+
+.control__input:disabled + .control__mark,
+.control__input:disabled:hover + .control__mark {
+  color: rgba($gray, 0.7);
+  border-color: rgba($gray, 0.7);
+  // opacity: 0.3;
+}
+
+.control__label {
+  grid-column: 2 / -1;
+}
+
+.control__input:disabled ~ .control__label,
+.control__input:disabled:hover ~ .control__label {
+  color: rgba($gray, 0.7);
+}
+
+/* Checkbox */
+// .control__input[type="checkbox"]:checked + .control__mark {
+  // position: absolute;
+  // content: "";
+  // background-image: url("../img/icons/icon-form-checked.svg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: 14px 11px;
+
+  // @media (min-width: $tablet-width) {
+  //   width: 50px;
+  //   height: 50px;
+  //   background-size: 32px 22px;
+  // }
+// }
+
+.control__input[type="checkbox"]:checked + .control__mark .control__icon {
+  opacity: 1;
+}
+
+// .control__input[type="checkbox"]:checked:hover + .control__mark .control__icon {
+//   fill: $green-hover;
+// }
+
+// .control__input[type="checkbox"]:checked:focus + .control__mark .control__icon {
+//   fill: rgba($green, 0.4);
+// }
+
+// .control__input[type="checkbox"]:checked:disabled + .control__mark .control__icon {
+//   fill: rgba($gray, 0.7);
+// }
+
+
+/* Radio */
+.control__input[type="radio"] + .control__mark {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 9px;
+  height: 9px;
+  background-color: $green;
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked:hover + .control__mark::before {
+  background-color: $green-hover;
+}
+
+.control__input[type="radio"]:checked:focus + .control__mark::before {
+  background-color: rgba($green, 0.4);
+}
+
+.control__input[type="radio"]:checked:active + .control__mark::before {
+  background-color: $green;
+}
+
+.control__input[type="radio"]:checked:disabled + .control__mark::before {
+  background-color: rgba($gray, 0.7);
+}

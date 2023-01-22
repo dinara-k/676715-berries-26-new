@@ -85,7 +85,7 @@
 }
 
 .products__content {
-  padding: 28px 20px 54px 24px;
+  padding: 28px 19px 54px 25px;
 }
 
 .products__link {
@@ -102,7 +102,7 @@
 }
 
 .products__link-title {
-  padding-bottom: 28px;
+  padding-bottom: 26px;
 }
 
 .products__link:hover .products__link-title {
@@ -119,6 +119,7 @@
 }
 
 .products__button {
+  padding-bottom: 13px;
   box-shadow: none;
 
   @media (min-width: $tablet-width) {

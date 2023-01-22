@@ -127,14 +127,16 @@
   column-gap: 20px;
   height: 336px;
   // max-width: 267px;
-  max-width: 240px;
+  max-width: 264px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     height: 192px;
     column-count: 3;
-    column-gap: 66px;
+    // column-gap: 66px;
+    column-gap: 64px;
     max-width: 483px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -153,6 +155,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
   }
+}
+
+.form__group--berries .control__label {
+  max-width: 87px;
 }
 // ------------------
 
@@ -266,27 +272,22 @@
 //   }
 // }
 // ------------------
+
+// --- рабочий кривоватый вариант 5: ограничен список по высоте + обрезается лишнее
 .form__group--storage .form__list {
   margin-bottom: 8px;
-  // column-count: 2;
-  // column-gap: 20px;
-  // height: 336px;
-  // // max-width: 267px;
-  // max-width: 240px;
-
 
   @media (min-width: $tablet-width) {
     height: 96px;
     column-count: 2;
     column-gap: 56px;
-    max-width: 443px;
+    max-width: 483px;
     margin-bottom: 24px;
     overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    // align-items: center;
     height: 46px;
     column-count: 3;
     column-gap: 48px;
@@ -295,13 +296,59 @@
 }
 
 .form__group--storage .form__item {
-  // break-inside: avoid;
   margin-bottom: 24px;
+}
 
+.form__group--storage .form__item:nth-child(2n) {
   @media (min-width: $tablet-width) {
-    // margin-bottom: 24px;
+    margin-bottom: 0;
   }
 }
+
+.form__group--storage .control__label {
+  @media (min-width: $tablet-width) {
+    max-width: 182px;
+  }
+}
+
+// --- вариант 6: display: grid
+// .form__group--storage .form__list {
+//   margin-bottom: 8px;
+
+
+//   @media (min-width: $tablet-width) {
+//     // height: 96px;
+//     // column-count: 2;
+//     // column-gap: 56px;
+//     max-width: 483px;
+//     display: grid;
+//     grid-auto-flow: column;
+//     grid-auto-rows: auto;
+//     grid-template-columns: repeat(2,221px);
+//     grid-template-rows: repeat(2, 1fr);
+//     gap: 24px 56px;
+//     margin-bottom: 24px;
+//     overflow: hidden;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     flex-direction: row;
+//     height: 46px;
+//     column-count: 3;
+//     column-gap: 48px;
+//     max-width: 792px;
+//   }
+// }
+
+// .form__group--storage .form__item {
+//   // margin-bottom: 24px;
+// }
+
+// .form__group--storage .control__label {
+//   @media (min-width: $tablet-width) {
+//     max-width: 182px;
+//   }
+// }
 
 .form__group--delivery {
   @media (min-width: $desktop-width) {
@@ -417,7 +464,7 @@
   line-height: 20px;
 }
 
-.form__label--red {
+.form__label-red {
   color: $red;
 }
 

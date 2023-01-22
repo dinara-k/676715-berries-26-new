@@ -45,6 +45,7 @@
     width: 532px;
     margin-right: 23px;
     margin-left: 213px;
+    padding-top: 142px;
     text-align: left;
   }
 
@@ -56,7 +57,7 @@
 }
 
 .banner__title {
-  padding-bottom: 32px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 48px;
@@ -73,12 +74,12 @@
   // flex-direction: column;
   // align-items: flex-start;
   width: 208px;
-  padding-bottom: 36px;
+  padding-bottom: 34px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding-bottom: 48px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +91,7 @@
 
 .banner__list-item {
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   // padding-bottom: 12px;
   padding-left: 44px;
   // margin-left: 44px;
@@ -98,7 +99,7 @@
   line-height: 19px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 27px;
     font-size: 18px;
     line-height: 22px;
   }

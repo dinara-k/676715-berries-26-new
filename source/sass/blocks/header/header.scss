@@ -41,7 +41,7 @@
     justify-content: space-between;
     // align-items: center;
     width: 716px;
-    padding: 22px 0;
+    padding: 23px 0 18px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +71,16 @@
 }
 
 .header__logo-image {
-  display: block;
+  fill: $green;
+
+  @media (min-width: $tablet-width) {
+    width: 58px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+  }
 }
 
 .header__logo-title {
@@ -79,5 +88,6 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    fill: $green;
   }
 }

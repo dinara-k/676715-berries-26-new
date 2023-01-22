@@ -20,22 +20,6 @@
   // box-shadow: inset 0 0 0 2px $grey-44;
 }
 
-.field--error {
-  border-color: $red;
-  // box-shadow: inset 0 0 0 2px $error;
-}
-
-.field--error-text {
-  display: none;
-}
-
-.field--error + .field--error-text {
-  display: block;
-  padding-top: 4px;
-  padding-left: 13px;
-  color: $red;
-}
-
 .field:disabled,
 .field:disabled:hover {
   border-color: rgba($gray, 0.7);
@@ -45,4 +29,3 @@
 .field:disabled:focus-visible {
   outline: none;
 }
-

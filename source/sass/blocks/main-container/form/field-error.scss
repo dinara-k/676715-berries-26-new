@@ -1,0 +1,14 @@
+.field-error .field-error__border {
+  border-color: $red;
+}
+
+.field-error__text {
+  display: none;
+}
+
+.field-error .field-error__text {
+  display: block;
+  padding-top: 4px;
+  padding-left: 13px;
+  color: $red;
+}

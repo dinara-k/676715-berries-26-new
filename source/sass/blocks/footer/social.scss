@@ -1,6 +1,6 @@
 .social__element {
-  // padding-top: 5px;
-  // padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .social__element:not(:last-child) {
@@ -8,6 +8,7 @@
 }
 
 .social__link {
+  // position: relative;
   display: grid;
   place-items: center;
   // display: block;
@@ -44,26 +45,45 @@
   // display: grid;
   // place-items: center;
   // нужны эти свойтсва выше?
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // margin: auto;
   fill: $green;
 }
 
-.social__link--telegram .social__icon {
+// .social__icon-svg {
+//   display: grid;
+//   place-items: center;
+// }
+
+.social__link--telegram .social__icon-svg {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
   }
 }
 
-.social__link--vkontakte .social__icon {
+.social__link--vkontakte .social__icon-svg {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 19px;
   }
 }
 
-.social__link--youtube .social__icon {
+// .social__link--youtube .social__icon {
+//   @media (min-width: $tablet-width) {
+//     width: 24px;
+//     height: 24px;
+//   }
+// }
+
+.social__link--youtube .social__icon-svg {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
   }
 }
+
