@@ -10,9 +10,11 @@
   @media (min-width: $desktop-width) {
     @include block-centering-desktop;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // justify-content: space-between;
+    // align-items: center;
     padding-top: 142px;
+    // padding-top: 116px;
+    padding-bottom: 90px;
   }
 }
 
@@ -22,8 +24,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    // width: 400px;
     order: 2;
+    width: 450px;
+    margin-right: 0;
+    margin-left: 70px;
   }
 }
 
@@ -36,7 +41,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 25px;
     padding-bottom: 48px;
+  }
+}
+
+.contacts__content {
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
   }
 }
 

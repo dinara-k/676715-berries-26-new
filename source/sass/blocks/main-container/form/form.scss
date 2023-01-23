@@ -2,11 +2,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
+    margin-left: 45px;
+    // padding-left: 45px;
   }
 }
 
@@ -18,12 +20,20 @@
     // flex-direction: column;
     // align-items: center;
     width: 484px;
+    margin-left: 45px;
     padding-top: 114px;
   }
 
   @media (min-width: $desktop-width) {
     width: 792px;
+    margin-left: 0;
     padding-top: 104px;
+  }
+}
+
+.form .line-leaf--big::before {
+  @media (min-width: $desktop-width) {
+    left: calc((100% - 296px - 45px) / 2);
   }
 }
 
@@ -124,7 +134,7 @@
 // ------------------ 2 вариант столбцов: 1 список с фикс.высотой -> если слишком много элементов, то появляется 3-й столбец
 .form__group--berries .form__list {
   column-count: 2;
-  column-gap: 20px;
+  column-gap: 30px;
   height: 336px;
   // max-width: 267px;
   max-width: 264px;
@@ -280,7 +290,8 @@
   @media (min-width: $tablet-width) {
     height: 96px;
     column-count: 2;
-    column-gap: 56px;
+    column-gap: 20px;
+    // column-gap: 56px;
     max-width: 483px;
     margin-bottom: 24px;
     overflow: hidden;
@@ -302,6 +313,16 @@
 .form__group--storage .form__item:nth-child(2n) {
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.form__group--storage .control {
+  @media (min-width: $tablet-width) {
+    column-gap: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 12px;
   }
 }
 
@@ -372,13 +393,27 @@
 
 .form__group--delivery .form__item {
   margin-bottom: 32px;
+  padding-right: 45px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+    padding-right: 0;
+  }
+}
+
+.form__group--delivery .control__label {
+  @media (min-width: $tablet-width) {
+    max-width: 220px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 318px;
   }
 }
 
 .form__group--contacts .text-container {
+  width: 267px;
+
   @media (min-width: $tablet-width) {
     width: 624px;
   }
@@ -405,6 +440,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, min-content);
     column-gap: 24px;
+    row-gap: 38px;
     padding-bottom: 40px;
   }
 
@@ -439,12 +475,58 @@
   }
 }
 
+.form__field-group--address .form__field-comment {
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+}
+
 .form__field-group--comment {
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     grid-row: 4 / -1;
   }
 }
+
+.form__label {
+  padding-bottom: 3px;
+  padding-left: 13px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__label-red {
+  color: $red;
+}
+
+.form__field {
+  padding: 16px 12px 14px 12px;
+}
+
+.form__field-group--comment .form__label {
+  padding-bottom: 6px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+    padding-left: 13px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.form__field-group--comment .form__field-comment {
+  height: 124px;
+
+  @media (min-width: $tablet-width) {
+    height: 144px;
+  }
+}
+
+
+
 // .form__field-group--name {
 //   width: 50%;
 // }
@@ -457,20 +539,9 @@
 //   }
 // }
 
-.form__label {
-  padding-bottom: 4px;
-  padding-left: 13px;
-  font-size: 16px;
-  line-height: 20px;
-}
 
-.form__label-red {
-  color: $red;
-}
 
-.form__field {
-  padding: 16px 12px;
-}
+
 
 // .form__group-button {
 //   text-align: center;
@@ -484,6 +555,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 792px;
+    width: 740px;
   }
 }

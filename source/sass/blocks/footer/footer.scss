@@ -102,13 +102,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 722px;
+    width: 716px;
     padding-top: 22px;
     padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1125px;
+    width: 1120px;
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -154,7 +154,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 135px;
+    width: 130px;
     height: 60px;
     // padding-top: 0;
     // padding-left: 0;
@@ -167,11 +167,12 @@
 
 .footer__logo-image {
   // display: block;
-  fill: $green;
+  // fill: $green;
 
   @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
+    // width: 60px;
+    // height: 60px;
+    transform: scale(1.12, 1.15);
   }
 
   // @media (min-width: $desktop-width) {
@@ -184,7 +185,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    fill: $green;
+     fill: $green;
   }
 }
 
@@ -218,4 +219,12 @@
 
 .footer--inner .contacts__link {
   background-color: $white;
+}
+
+.footer--inner .contacts-container {
+  padding-top: 95px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 115px;
+  }
 }

@@ -45,7 +45,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1092px;
+    // width: 1092px;
+    width: 1115px;
   }
 }
 
@@ -66,16 +67,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 135px;
+    width: 130px;
   }
 }
 
 .header__logo-image {
-  fill: $green;
+  // fill: $green;
 
   @media (min-width: $tablet-width) {
-    width: 58px;
-    height: 60px;
+    // width: 58px;
+    // height: 60px;
+    transform: scale(1.12, 1.15);
   }
 
   @media (min-width: $desktop-width) {

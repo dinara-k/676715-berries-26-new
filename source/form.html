@@ -370,7 +370,7 @@
                         <span class="control__label">Самовывоз<br>(Набережная&nbsp;Обводного канала, 101)</span>
                       </label>
                     </li> -->
-                    
+
                   </ul>
                 <!-- </div> -->
               </fieldset>
@@ -396,11 +396,12 @@
                   <!-- </div> -->
                   <div class="form__field-group form__field-group--address">
                     <label class="form__label" for="order-address">Адрес <span class="form__label-red">*</span></label>
-                    <input class="form__field field" type="text" id="order-address" name="order-address" placeholder="Адрес в Санкт-Петербурге" required>
+                    <!-- <input class="form__field field" type="text" id="order-address" name="order-address" placeholder="Адрес в Санкт-Петербурге" required> -->
+                    <textarea class="form__field field form__field-comment" rows="3" id="order-address" name="order-address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
                   </div>
                   <div class="form__field-group form__field-group--comment">
                     <label class="form__label" for="order-comment">Пожелания к заказу</label>
-                    <textarea class="form__field field form__field-comment" rows="7" id="order-comment" name="order-comment" placeholder="Чем мы можем вам помочь?"></textarea>
+                    <textarea class="form__field field form__field-comment" rows="5" id="order-comment" name="order-comment" placeholder="Чем мы можем вам помочь?"></textarea>
                   </div>
                 </div>
               </div>
@@ -420,48 +421,50 @@
         <div class="contacts-container">
           <div class="text-container">
             <h2 class="title title--h2 contacts__title">Где забрать ягоды?</h2>
-            <p class="text contacts__text">Забери ягоды с нашего склада по адресу:</p>
-            <ul class="contacts__list">
-              <li class="contacts__item contacts__item--address">
-                <address class="contacts__address">
-                  <a class="contacts__link" href="#">
+            <div class="contacts__content">
+              <p class="text contacts__text">Забери ягоды с нашего склада по&nbsp;адресу:</p>
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--address">
+                  <address class="contacts__address">
+                    <a class="contacts__link" href="#">
+                      <svg class="contacts__icon" width="32" height="32" aria-hidden="true" focusable="false">
+                        <use href="img/sprite.svg#icon-address"></use>
+                      </svg>
+                      <span>Набережная Обводного канала, 101</span>
+                    </a>
+                  </address>
+                </li>
+                <li class="contacts__item contacts__item--phone">
+                  <!-- <a class="contacts__link" href="tel:+79105244118" target="_blank">+ 7 910 524 41 18</a>-->
+                  <a class="contacts__link" href="tel:+79105244118" target="_blank">
                     <svg class="contacts__icon" width="32" height="32" aria-hidden="true" focusable="false">
-                      <use href="img/sprite.svg#icon-address"></use>
+                      <use href="img/sprite.svg#icon-phone"></use>
                     </svg>
-                    <span>Набережная Обводного канала, 101</span>
+                    <span>+ 7 910 524 41 18</span>
                   </a>
-                </address>
-              </li>
-              <li class="contacts__item contacts__item--phone">
-                <!-- <a class="contacts__link" href="tel:+79105244118" target="_blank">+ 7 910 524 41 18</a>-->
-                <a class="contacts__link" href="tel:+79105244118" target="_blank">
-                  <svg class="contacts__icon" width="32" height="32" aria-hidden="true" focusable="false">
-                    <use href="img/sprite.svg#icon-phone"></use>
-                  </svg>
-                  <span>+ 7 910 524 41 18</span>
-                </a>
-              </li>
-              <li class="contacts__item contacts__item--email">
-                <!-- <a class="contacts__link" href="mailto:info@yagoda.ru">info@yagoda.ru</a> -->
-                <a class="contacts__link" href="mailto:info@yagoda.ru">
-                  <svg class="contacts__icon" width="32" height="32" aria-hidden="true" focusable="false">
-                    <use href="img/sprite.svg#icon-email"></use>
-                  </svg>
-                  <span>info@yagoda.ru</span>
-                </a>
-              </li>
+                </li>
+                <li class="contacts__item contacts__item--email">
+                  <!-- <a class="contacts__link" href="mailto:info@yagoda.ru">info@yagoda.ru</a> -->
+                  <a class="contacts__link" href="mailto:info@yagoda.ru">
+                    <svg class="contacts__icon" width="32" height="32" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#icon-email"></use>
+                    </svg>
+                    <span>info@yagoda.ru</span>
+                  </a>
+                </li>
 
-              <!-- <li class="contacts__item contacts__item--address">
-                <address class="contacts__address">
-                  <a class="contacts__link" href="#">
-                    <svg class="contacts__icon" width="32" height="32" aria-hidden="true" focusable="false">
-                      <use href="img/sprite.svg#icon-address"></use>
-                    </svg>
-                    <span>Набережная Обводного канала, 101 asd asdasd asd asda sdasdasdas asd asdsad</span>
-                  </a>
-                </address>
-              </li> -->
-            </ul>
+                <!-- <li class="contacts__item contacts__item--address">
+                  <address class="contacts__address">
+                    <a class="contacts__link" href="#">
+                      <svg class="contacts__icon" width="32" height="32" aria-hidden="true" focusable="false">
+                        <use href="img/sprite.svg#icon-address"></use>
+                      </svg>
+                      <span>Набережная Обводного канала, 101 asd asdasd asd asda sdasdasdas asd asdsad</span>
+                    </a>
+                  </address>
+                </li> -->
+              </ul>
+            </div>
           </div>
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8234.706491156281!2d30.333149153369902!3d59.914382418204966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1673874061915!5m2!1sru!2sru" title="Магазин Ягоды на карте" allowfullscreen></iframe>
         </div>

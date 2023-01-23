@@ -1,6 +1,7 @@
 .banner {
   width: 100%;
-  height: 640px;
+  // height: 640px;
+  min-height: 640px;
   margin-bottom: 64px;
   background-image: url("/img/banner/banner-main-background-mobile.jpg");
   background-repeat: no-repeat;
@@ -13,7 +14,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 924px;
+    // height: 924px;
+    min-height: 924px;
     margin-bottom: 100px;
     background-image: url("/img/banner/banner-main-background-tablet.jpg");
 
@@ -23,7 +25,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 800px;
+    // height: 800px;
+    min-height: 800px;
     background-image: url("/img/banner/banner-main-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -53,6 +56,7 @@
     width: 550px;
     margin-right: 349px;
     margin-left: 539px;
+    padding-top: 172px;
   }
 }
 
@@ -64,7 +68,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 52px;
+    padding-bottom: 57px;
   }
 }
 
@@ -75,16 +79,17 @@
   // align-items: flex-start;
   width: 208px;
   padding-bottom: 34px;
+  margin-bottom: 34px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding-bottom: 24px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 502px;
-    padding-bottom: 52px;
+    padding-bottom: 33px;
     padding-left: 26px;
   }
 }
@@ -99,7 +104,7 @@
   line-height: 19px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -137,7 +142,8 @@
 }
 
 .banner--inner {
-  height: 120px;
+  // height: 120px;
+  min-height: 120px;
   background-image: url("/img/banner/banner-sub-background-mobile.jpg");
 
   @media (min-resolution: 2dppx) {
@@ -145,7 +151,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 200px;
+    // height: 200px;
+    min-height: 200px;
     background-image: url("/img/banner/banner-sub-background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -162,13 +169,14 @@
   }
 }
 
-// .banner__inner {
+.banner__inner {
+  min-height: 120px;
 //   margin-bottom: 64px;
 
 //   @media (min-width: $tablet-width) {
 //     margin-bottom: 100px;
 //   }
-// }
+}
 
 // .banner__image {
 //   display: block;
